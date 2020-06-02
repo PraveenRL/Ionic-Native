@@ -18,6 +18,10 @@ const routes: Routes = [
   {
     path: 'action-sheet',
     loadChildren: () => import('./action-sheet/action-sheet.module').then( m => m.ActionSheetPageModule)
+  },
+  {
+    path: 'fingerprint-aio',
+    loadChildren: () => import('./fingerprint-aio/fingerprint-aio.module').then( m => m.FingerprintAioPageModule)
   }
 ];
 
